@@ -1,0 +1,140 @@
+.dashboard {
+    padding: 20px;
+    padding-right: 10px;
+  width: 90%;
+  background-color: white; /* Background color for visibility */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container h1 {
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+.container input {
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.divided-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center-container{
+    width: 110vh;
+}
+
+.cards-container {
+    border: 0.5px solid rgba(0, 0, 0, 0.596);
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    text-align: center;
+    margin-right: 15px;
+    
+}
+.card-head{
+    font-size: 20px;
+    padding-top: 0px;
+}
+.para-card{
+    font-size: 20px;
+}
+.icon{
+    font-size: 25px;
+}
+.para-graph{
+    color:#9B76D6 ;
+    font-weight: 500;
+}
+.unactive{
+    border: 0px;
+    padding: 10px;
+    background-color: white;
+    color: #e9dcfa;
+    cursor: pointer;
+    font-weight: 800;
+}
+.active{
+    border: 0px;
+    padding: 10px;
+    background-color: #e9dcfa;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 768px) {
+
+    .sidebar {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .menu-items li {
+      padding: 10px 0;
+    }
+  
+    .bottom-menu li {
+      padding: 8px 0;
+    }
+  
+    .dashboard {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container input {
+      width: 100%;
+    }
+  
+    .center-container {
+      width: 100%;
+    }
+  
+    .cards-container {
+      margin-left: 0;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .cards {
+        
+          flex-direction: column;
+          align-items: center;
+      }
+    .cards-container-inner,
+    .cards-container-btm {
+      
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+}
